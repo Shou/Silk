@@ -1329,8 +1329,8 @@ StScrollBar {
 
 /* Eeeky things */
 .legacy-tray {
-  background-color: #393f3f;
-  border: 1px solid #1c1f1f;
+  background-color: transparent;
+  border: 2px solid transparent;
   border-bottom-width: 0; }
   .legacy-tray:ltr {
     border-radius: 0 6px 0 0;
@@ -1341,24 +1341,32 @@ StScrollBar {
 
 .legacy-tray-handle,
 .legacy-tray-icon {
-  padding: 6px; }
+  padding: 20px;
+  color: #383030 }
+.legacy-tray-handle {
+  background-color: transparent }
+.legacy-tray-icon {
+  background-color: #303038 }
   .legacy-tray-handle StIcon,
   .legacy-tray-icon StIcon {
-    icon-size: 24px; }
+    icon-size: 48px; }
   .legacy-tray-handle:hover, .legacy-tray-handle:focus,
   .legacy-tray-icon:hover,
-  .legacy-tray-icon:focus {
-    background-color: rgba(238, 238, 236, 0.1); }
+  .legacy-tray-icon:focus {}
 
 .legacy-tray-icon-box {
-  spacing: 12px; }
+  spacing: 0px;
+  margin: 0;
+  padding: 0 !important;
+  border: none;
+  background-color: transparent }
   .legacy-tray-icon-box:ltr {
     padding-left: 12px; }
   .legacy-tray-icon-box:rtl {
     padding-right: 12px; }
   .legacy-tray-icon-box StButton {
-    width: 24px;
-    height: 24px; }
+    width: 48px;
+    height: 48px; }
 
 .magnifier-zoom-region {
   border: 2px solid #1166DD; }
